@@ -16,6 +16,16 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    sourceSets {
+        main {
+            res.srcDirs(
+                    'src/main/res',
+                    'src/main/res/layouts',
+                    'src/main/res/layouts/main'
+            )
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
